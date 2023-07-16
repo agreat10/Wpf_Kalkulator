@@ -1,0 +1,42 @@
+﻿<Window x:Class="Wpf_Kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Kalkulator"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="350" Width="500">
+    <Grid x:Name="MainRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>  
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Text" Grid.ColumnSpan="4" x:Name="textLabel" />
+        <Button Grid.Row="1" Grid.Column="0" x:Name="btn1" Margin="5,5,5,5" FontSize="20">1</Button>
+        <Button Grid.Row="1" Grid.Column="1" x:Name="btn2" Margin="5,5,5,5" FontSize="20">2</Button>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="btn3" Margin="5,5,5,5" FontSize="20">3</Button>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="btn4" Margin="5,5,5,5" FontSize="20">4</Button>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="btn5" Margin="5,5,5,5" FontSize="20">5</Button>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="btn6" Margin="5,5,5,5" FontSize="20">6</Button>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="btn7" Margin="5,5,5,5" FontSize="20">7</Button>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="btn8" Margin="5,5,5,5" FontSize="20">8</Button>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="btn9" Margin="5,5,5,5" FontSize="20">9</Button>
+        <Button Grid.Row="4" Grid.Column="0" x:Name="btn0" Margin="5,5,5,5" FontSize="20">0</Button>
+        <Button Grid.Row="4" Grid.Column="1" x:Name="btndel" Margin="5,5,5,5" FontSize="20">/</Button>
+        <Button Grid.Row="3" Grid.Column="3" x:Name="btnplus" Margin="5,5,5,5" FontSize="20">+</Button>
+        <Button Grid.Row="1" Grid.Column="3" x:Name="btnmin" Margin="5,5,5,5" FontSize="20">-</Button>
+        <Button Grid.Row="2" Grid.Column="3" x:Name="btnumn" Margin="5,5,5,5" FontSize="20">*</Button>
+        <Button Grid.Row="4" Grid.Column="2" x:Name="btnAC" Margin="5,5,5,5" FontSize="20">AC</Button>
+        <Button Grid.Row="4" Grid.Column="3" x:Name="btnrav" Margin="5,5,5,5" FontSize="20">=</Button>
+    </Grid>
+</Window>
